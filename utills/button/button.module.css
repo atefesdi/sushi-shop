@@ -1,0 +1,18 @@
+.container {
+  border-radius: 36px;
+  padding: 5px;
+  width: 190px;
+  border: 1px solid;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 50;
+  height: 50px;
+  margin-top: 7px;
+}
+
+.container:hover {
+  opacity: 0.6;
+}

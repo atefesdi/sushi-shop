@@ -1,0 +1,258 @@
+.popular_foods {
+  background: var(--primary-color);
+  min-height: 780px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.popular_foods__title {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.popular_foods__catalogue {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  align-items: end;
+  justify-content: center;
+}
+
+.image {
+  width: 120px;
+  height: 90px;
+}
+
+.active_image {
+  width: 220px;
+  height: 160px;
+}
+
+.popular_foods__card {
+  width: 220px;
+  height: 250px;
+  background: #ffffff12;
+  border-radius: 35px;
+  border: 1px solid #ffffff46;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.active_card {
+  width: 300px;
+  height: 330px;
+  background: #fff;
+  border: none;
+}
+
+.popular_foods__card__title {
+  color: #fff;
+  font-size: 22px;
+}
+
+.popular_foods__card__title__active {
+  color: var(--black-500);
+  font-size: 30px;
+}
+
+.popular_foods__card__details__active {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 24px;
+  color: var(--black-400);
+}
+
+.popular_foods__card__details__active > div {
+  color: var(--gray-100);
+}
+
+.popular_foods__card__details__active > div > img,
+.popular_foods__card__details > div > img {
+  margin-right: 5px;
+}
+
+.popular_foods__card__details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+  color: #fff;
+}
+
+.popular_foods__card__details > div,
+.popular_foods__card__details__active > div {
+  display: flex;
+  justify-content: center;
+}
+
+.popular_foods__filters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.popular_foods__filters::-webkit-scrollbar {
+  display: none;
+}
+
+.popular_foods__filter__btn {
+  background: #ffffff12;
+  border: 1px solid #ffffff46;
+  border-radius: 35px;
+  margin: 5px;
+  width: 130px;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 35px;
+  cursor: pointer;
+}
+
+.popular_foods__filters button:target {
+  background: lightblue;
+}
+
+.popular_foods__filter__btn_img {
+  width: 30px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.navigation__btn {
+  width: 65px;
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .sushi__title {
+    font-size: 40px;
+  }
+
+  .about_us_image__sushi {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .sushi_image {
+    width: 80%;
+    height: 80%;
+    padding: 0px;
+  }
+
+  .popular_foods__card {
+    width: 180px;
+    height: 200px;
+  }
+
+  .active_card {
+    width: 250px;
+    height: 280px;
+    background: #fff;
+    border: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .about_us {
+    flex-direction: column;
+    height: 700x;
+  }
+
+  .about_us__image {
+    width: 100%;
+  }
+
+  .about_us__button {
+    top: 318px;
+  }
+
+  .sushi_image {
+    width: 50% !important;
+  }
+
+  .sushi__title {
+    font-size: 40px;
+  }
+
+  .about_us_image__sushi {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .sushi_image {
+    width: 80%;
+    height: 80%;
+    padding: 0px;
+  }
+
+  .about_us__content {
+    width: 100%;
+  }
+
+  .popular_foods__catalogue {
+    flex-direction: column;
+  }
+
+  .popular_foods__catalogue {
+    align-items: center;
+  }
+
+  .popular_foods__filters {
+    width: 70vw !important;
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 575px) {
+  .popular_foods {
+    padding: 10px;
+  }
+
+  .popular_foods__title {
+    font-size: 30px;
+  }
+
+  .popular_foods__card {
+    width: 180px;
+    height: 180px;
+  }
+
+  .active_card {
+    width: 250px;
+    height: 260px;
+  }
+
+  .active_image {
+    width: 100px;
+    height: auto;
+  }
+
+  .image {
+    width: 90px;
+    height: auto;
+  }
+
+  .popular_foods__card__title {
+    font-size: 17px;
+  }
+}

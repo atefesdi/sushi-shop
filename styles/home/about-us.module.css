@@ -1,0 +1,187 @@
+.about_us {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 770px;
+  height: auto;
+}
+
+.about_us__image {
+  width: 43%;
+  position: relative;
+  height: 770px;
+  min-height: 490px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about_us_image__sushi {
+  background: #fff;
+  width: 100%;
+  height: 380px;
+  display: flex;
+  flex-direction: row;
+  padding: 46px;
+}
+
+.sushi_image {
+  width: 240px;
+  height: 220px;
+  padding: 30px;
+}
+
+.sushi_image__description {
+  width: 40%;
+  height: 100%;
+}
+
+.about_us__content {
+  width: 57%;
+  padding: 100px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sushi__subtitle {
+  color: var(--primary-color);
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.sushi__title {
+  font-size: 70px;
+}
+
+.sushi__description {
+  font-size: 20px;
+  line-height: 40px;
+  margin-top: 30px;
+}
+
+.about_us__button {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  padding: 12px 32px;
+  min-height: 64px;
+  color: #fff;
+  background-color: var(--black-200);
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 32px 0 0 32px;
+  font-size: 17px;
+  width: 200px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .sushi__title {
+    font-size: 40px;
+  }
+
+  .about_us__image {
+    display: flex;
+  }
+
+  .about_us_image__sushi {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .sushi_image {
+    width: 150px;
+    height: 150px;
+    padding: 0px;
+  }
+
+  .sushi__description {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .about_us__button {
+    top: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about_us {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about_us__image {
+    width: 100%;
+    height: 0px;
+    height: 600px;
+  }
+
+  .about_us__button {
+    top: 270px;
+  }
+
+  .sushi_image {
+    width: 220px !important;
+    height: 180px !important;
+  }
+
+  .sushi__title {
+    font-size: 40px;
+  }
+
+  .about_us_image__sushi {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    height: calc(50% - 2px);
+  }
+
+  .sushi_image {
+    width: 200px !important;
+    height: auto;
+    padding: 0px;
+  }
+
+  .about_us__content {
+    width: 100vw;
+    height: 400px;
+  }
+}
+
+@media (max-width: 575px) {
+  .about_us__button {
+    top: 250px;
+  }
+
+  .about_us__content {
+    padding: 30px;
+  }
+
+  .sushi__title {
+    font-size: 30px;
+  }
+
+  .sushi__description {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .about_us__image {
+    height: 560px;
+  }
+
+  .sushi_image {
+    width: 180px !important;
+  }
+
+  .sushi_image__description {
+    width: 50px;
+    height: 50px;
+  }
+}
